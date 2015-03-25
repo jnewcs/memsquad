@@ -1,0 +1,1 @@
+console.log("Romo"),$(document).ready(function(){$("#t").click(function(){console.log("Dirk"),$(".navbar-toggle:visible").click()}),$("#p").click(function(){console.log("Dirk"),$(".navbar-toggle:visible").click()})});

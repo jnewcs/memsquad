@@ -1,0 +1,74 @@
+<div id="content">
+    <%= render(:partial => "main", :locals => {:check => false}) %> 
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    function Switch(destinationID, id_1, id_2, id_3, id_4, id_5, method, url) {
+        var obj = this;
+        this.destination = document.getElementById(destinationID);
+        this.teamButton = document.getElementById(id_1);
+        this.platformButton = document.getElementById(id_2);
+        this.teamButton2 = document.getElementById(id_3);
+        this.platformButton2 = document.getElementById(id_4);
+        this.mainButton = document.getElementById(id_5);
+        
+        this.method = method;
+        this.url = url;
+
+        this.teamButton.onclick = function(event) {
+            obj.query = "team";
+            obj.performSwitch(event);
+        }
+        
+        this.teamButton2.onclick = function(event) {
+            obj.query = "team";
+            obj.performSwitch(event);
+        }
+
+        this.platformButton.onclick = function(event) {
+            obj.query = "platform";
+            obj.performSwitch(event);
+        }
+        
+        this.platformButton2.onclick = function(event) {
+            obj.query = "platform";
+            obj.performSwitch(event);
+        }
+        
+        this.mainButton.onclick = function(event) {
+            obj.query = "main";
+            obj.performSwitch(event);
+        }
+    }
+
+    Switch.prototype.performSwitch = function(event) {
+        var obj = this;
+        var myXHR = new XMLHttpRequest();
+
+        myXHR.onreadystatechange = function() {
+            if(this.readyState === 1) {
+                NProgress.start(); 
+            }
+            if(this.readyState === 4) {
+                if(obj.query === "team") {
+                    $(obj.destination).html("<%= escape_javascript(render :partial => 'team')%>");
+                } else if (obj.query === "platform") {
+                    $(obj.destination).html("<%= escape_javascript(render :partial => 'platform')%>");    
+                } else if (obj.query === "main") {
+                    $(obj.destination).html("<%= escape_javascript(render :partial => 'main', :locals => {:check => true})%>");    
+                }
+                NProgress.done();  
+                return;
+            }
+            if(this.status != 200) {
+                return;
+            }
+        }
+        myXHR.open(obj.method, obj.url+encodeURIComponent(obj.query), true);
+        myXHR.send();
+    }
+    
+    var s = new Switch("content", "t", "p", "t2", "p2", "clickable", "GET", "/home/switch?query=");
+    //]]>
+</script>

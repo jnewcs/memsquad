@@ -1,0 +1,226 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-font: Open Sans !important;
+$secondary-font: 'PT Sans', sans-serif !important;
+$primary-body-color: #333 !important;
+$secondary-body-color: #525252 !important;
+$highlight-font-color: #891414 !important;
+$highlight-color-non-important: #891414;
+$primary-background-color: #fbfbfb !important;
+$primary-background-color-non-important: #fbfbfb;
+$base-font-size: 12px;
+$large-font-size: 2.1em;
+$header-height: 60px;
+$logo-height: 60px;
+$logo-width: 200px;
+$important-z-index: 1000;
+$max-separator-width: 600px;
+
+body, html {
+    font-size: $base-font-size;
+    font-family: $primary-font;
+    color: $primary-body-color;
+    background-color: $primary-background-color;
+}
+
+.container {
+    padding: 0px 50px !important;
+}
+
+.navbar {
+    background-color: $primary-background-color;
+    opacity: .85;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+}
+
+.logo {
+    background-image: url('logo-new-v2.png');
+    background-size: cover;
+    width: $logo-width;
+    height: $logo-height;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+}
+
+.logo-clickable {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: $header-height;
+}
+
+.logo-clickable:hover {
+    cursor: pointer;
+}
+
+a {
+    outline: inherit !important;
+    color: $primary-body-color;
+}
+
+.menu-tab > a:focus, .menu-tab > a:hover {
+    background-color: $primary-background-color;
+    border-bottom: 2px solid $highlight-color-non-important;
+}
+
+.menu-tab-logo {
+    width: 33.33%;
+}
+
+.menu-tab {
+    width: 33.33%;
+    margin: 9px auto;
+}
+
+.menu-tab > a {
+    max-width: $logo-width;
+    text-align: center;
+    padding: 10px !important;
+    height: $header-height * (2/3);
+    border-bottom: 2px solid $primary-background-color-non-important;
+}
+
+.menu-tab-left > a {
+    margin: 0px 0px 0px auto;
+}
+
+.menu-tab-right > a {
+    margin: 0px auto 0px 0px;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    height: 375px;
+    background-position: 80%;
+    background-image: url('stanford.jpg');
+    border: 1px solid $primary-body-color;
+}
+
+.platform-image {
+    @extend .main-image;
+    background-image: url('stanford-football.jpg');
+    background-position: 90%;
+}
+
+span.icon-bar {
+    background-color: $highlight-font-color;
+}
+
+.hidden-logo {
+    display: none;
+    position: absolute;
+    top: 0px;
+    margin: 15px;
+    color: $primary-body-color;
+}
+
+@media(max-width: 767px) {
+    .logo {
+        display: none;
+    }
+    
+    .navbar-nav {
+        margin: 0px !important;    
+    }
+    
+    .navbar {
+        opacity: .95;
+        border-bottom: 1px solid $highlight-font-color;     
+    }
+    
+    .navbar-collapse.in {
+        border-top: 1px solid $secondary-body-color;  
+        overflow-y: inherit !important;    
+    }
+    
+    .menu-tab {
+        width: 100%;    
+    }
+    
+    .menu-tab-right > a {
+        margin: auto !important;    
+    }
+    
+    .menu-tab-left > a {
+        margin: auto !important;    
+    }
+    
+    .hidden-logo {
+        display: block;    
+    }
+    
+    .header-spacer {
+        border: 0px !important;
+    }
+}
+
+.title {
+    color: $highlight-font-color;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 1px solid $primary-body-color;
+    background-size: cover;
+    margin: 10px auto;
+    display: block;
+}
+
+#madilyn {
+    background-image: url('madilyn.png');
+}
+
+#jack {
+    background-image: url('jack.png');
+}
+
+#ibby {
+    background-image: url('ibby.png');
+}
+
+#rachel {
+    background-image: url('rachel.png');
+}
+
+.profile-name {
+    text-align: center;
+    color: $secondary-body-color;
+    font-family: $secondary-font;
+}
+
+p {
+    line-height: $large-font-size;
+    font-family: $secondary-font;
+}
+
+.btn {
+    outline: inherit !important;
+    display: block !important;
+    margin: 10px auto !important;
+}
+
+.header-spacer {
+    padding-top: 61px;
+    border-bottom: 1px solid $highlight-color-non-important;
+}
+
+.profile-card {
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid $secondary-body-color;
+}

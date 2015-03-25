@@ -1,0 +1,52 @@
+<div class="main-image animate fadeIn"></div>
+<div class="container">
+    <h3 class="title">
+        We are MemSquad
+    </h3>
+    <p>
+        Eighteen! We are MemSquad, and it would be our honor to serve all of you as class presidents for next year. Together, we have over 15 years of combined student government experience and have extensive background in representing those around us. Each of us are current Frosh Council representatives, and are well acquainted with the nitty-gritty details that revolve around next year’s presidency.
+    </p>
+    <div class="row">
+        <div class="col-lg-6 col-sm-6">
+            <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="t2">
+                Our Team
+            </button>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+            <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="p2">
+                Our Platform
+            </button>
+        </div>
+    </div>
+    <div class="faces">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+                <div class="profile-image animate fadeIn" id="madilyn"></div>
+                <h6 class="profile-name">Madilyn</h6>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+                <div class="profile-image animate fadeIn" id="ibby"></div>
+                <h6 class="profile-name">Ibrahim</h6>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+                <div class="profile-image animate fadeIn" id="rachel"></div>
+                <h6 class="profile-name">Rachel</h6>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+                <div class="profile-image animate fadeIn" id="jack"></div>
+                <h6 class="profile-name">Jack</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if check == true %>
+    <script type="text/javascript">
+        //<![CDATA[
+        var s = new Switch("content", "t", "p", "t2", "p2", "clickable", "GET", "/home/switch?query=");
+        //]]>
+    </script>
+<% end %>

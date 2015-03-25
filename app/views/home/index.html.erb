@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
     //<![CDATA[
-    function Switch(destinationID, id_1, id_2, id_3, id_4, id_5, id_6 method, url) {
+    function Switch(destinationID, id_1, id_2, id_3, id_4, id_5, id_6, method, url) {
         var obj = this;
         this.destination = document.getElementById(destinationID);
         this.teamButton = document.getElementById(id_1);
@@ -38,6 +38,11 @@
         }
         
         this.mainButton.onclick = function(event) {
+            obj.query = "main";
+            obj.performSwitch(event);
+        }
+        
+        this.hidden.onclick = function(event) {
             obj.query = "main";
             obj.performSwitch(event);
         }

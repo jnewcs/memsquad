@@ -40,8 +40,6 @@ body, html {
 }
 
 .logo {
-    background-image: url('logo-new-v2.png');
-    background-size: cover;
     width: $logo-width;
     height: $logo-height;
     margin: 0px auto;
@@ -99,17 +97,15 @@ a {
 .main-image {
     display: block;
     width: 100%;
-    background-size: cover;
-    height: 375px;
-    background-position: 80%;
-    background-image: url('stanford.jpg');
+    height: 450px;
+    margin-top: -75px;
     border: 1px solid $primary-body-color;
 }
 
 .platform-image {
     @extend .main-image;
-    background-image: url('stanford-football.jpg');
-    background-position: 90%;
+    margin-top: 0px;
+    height: 400px;
 }
 
 span.icon-bar {
@@ -174,25 +170,8 @@ span.icon-bar {
     height: 100px;
     border-radius: 100px;
     border: 1px solid $primary-body-color;
-    background-size: cover;
     margin: 10px auto;
     display: block;
-}
-
-#madilyn {
-    background-image: url('madilyn.png');
-}
-
-#jack {
-    background-image: url('jack.png');
-}
-
-#ibby {
-    background-image: url('ibby.png');
-}
-
-#rachel {
-    background-image: url('rachel.png');
 }
 
 .profile-name {

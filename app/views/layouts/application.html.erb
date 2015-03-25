@@ -25,20 +25,11 @@
   	    <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         
-        <!-- Easing JQuery Plugin JavaScript -->
-        <script type="text/javascript" src="/assets/jquery.easing.min.js?body=1"></script>
+        <!-- Easing JQuery Plugin, Memsquad, Progress JavaScript -->
+        <%= javascript_include_tag "jquery.easing.min", "memsquad", "progress" %>
         
-        <!-- Memsquad JavaScript -->
-        <script type="text/javascript" src="/assets/memsquad.js?body=1"></script>
-    
-        <!-- Progress JavaScript -->
-        <script type="text/javascript" src="/assets/progress.js?body=1"></script>
-        
-        <!-- Animate CSS -->
-        <script type="text/css" src="/assets/animate.css?body=1"></script>
-        
-        <!-- Progress CSS -->
-        <script type="text/css" src="/assets/progress.css?body=1"></script>
+        <!-- Animate CSS and Progress CSS -->
+        <%= stylesheet_link_tag "animate", "progress" %>
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,7 +62,7 @@
                             </li>
                             
                             <li class="menu-tab-logo">
-                                <div class="logo"></div>
+                                <%= image_tag "logo-new-v2.png", alt: "Logo",  class: "logo" %>
                                 <div class="logo-clickable" id="clickable"></div>
                             </li>
                             <li class="menu-tab menu-tab-right">

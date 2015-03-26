@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # Enables All Features
 gem 'rails_12factor', group: :production
 
+# Enables New Relic Monitoring
+gem 'newrelic_rpm'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

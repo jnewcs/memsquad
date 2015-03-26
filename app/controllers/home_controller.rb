@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
     def index
-        @anchor = "main"    
+
     end
     
     def switch

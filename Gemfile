@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # Enables All Features
 gem 'rails_12factor', group: :production
 
+# Compress assets
+gem 'heroku_rails_deflate', :group => :production
+
 # Enables New Relic Monitoring
 gem 'newrelic_rpm'
 

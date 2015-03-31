@@ -14,8 +14,8 @@ $base-font-size: 12px;
 $large-font-size: 2.1em;
 $header-height: 40px;
 $header-number: 40;
-$logo-height: 70px;
-$logo-height-half: -35px;
+$logo-height: 76px;
+$logo-height-half: -38px;
 $logo-width: 70px;
 $important-z-index: 1000;
 $max-separator-width: 600px;
@@ -48,11 +48,11 @@ body, html {
     height: $logo-height;
     position: absolute;
     margin: 0px auto;
-    top: 0px;
+    top: 1px;
     left: 50%;
     margin-left: $logo-height-half;
     display: block;
-    background-image: url(asset_path('logo-blue.png'));
+    background-image: url(asset_path('logo-blue-small-v2.png'));
     background-size: cover;
 }
 

@@ -6,15 +6,17 @@ $primary-font: Open Sans !important;
 $secondary-font: 'PT Sans', sans-serif !important;
 $primary-body-color: #333 !important;
 $secondary-body-color: #525252 !important;
-$highlight-font-color: #891414 !important;
-$highlight-color-non-important: #891414;
+$highlight-font-color: #37cecc !important;
+$highlight-color-non-important: #37cecc;
 $primary-background-color: #fbfbfb !important;
 $primary-background-color-non-important: #fbfbfb;
 $base-font-size: 12px;
 $large-font-size: 2.1em;
-$header-height: 60px;
-$logo-height: 60px;
-$logo-width: 200px;
+$header-height: 40px;
+$header-number: 40;
+$logo-height: 70px;
+$logo-height-half: -35px;
+$logo-width: 70px;
 $important-z-index: 1000;
 $max-separator-width: 600px;
 
@@ -32,7 +34,9 @@ body, html {
 .navbar {
     background-color: $primary-background-color;
     opacity: .85;
+    min-height: $header-height !important;
     position: relative;
+    border-bottom: 1px solid $highlight-font-color;
 }
 
 .nav {
@@ -42,17 +46,23 @@ body, html {
 .logo {
     width: $logo-width;
     height: $logo-height;
+    position: absolute;
     margin: 0px auto;
+    top: 0px;
+    left: 50%;
+    margin-left: $logo-height-half;
     display: block;
-    position: relative;
+    background-image: url(asset_path('logo-blue.png'));
+    background-size: cover;
 }
 
 .logo-clickable {
-    position: absolute;
+    margin: 9px auto;
+    position: relative;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: $header-height;
+    height: $header-height * (2/3);
 }
 
 .logo-clickable:hover {
@@ -79,9 +89,9 @@ a {
 }
 
 .menu-tab > a {
-    max-width: $logo-width;
+    max-width: $logo-width*2;
     text-align: center;
-    padding: 10px !important;
+    padding: 4px !important;
     height: $header-height * (2/3);
     border-bottom: 2px solid $primary-background-color-non-important;
 }
@@ -97,15 +107,32 @@ a {
 .main-image {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 500px;
     margin-top: -75px;
+    background-image: url(asset_path('team-test.jpg'));
+    background-size: cover;
     border: 1px solid $primary-body-color;
+}
+
+@media(max-width: 900px) {
+    .main-image {
+        height: 450px;
+        margin-top: 0px;
+        background-image: url(asset_path('team-2.jpg'));
+    }
+}
+
+@media(max-width: 600px) {
+    .main-image {
+        background-image: url(asset_path('team-2-mobile.jpg'));
+    }
 }
 
 .platform-image {
     @extend .main-image;
+    background-image: url(asset_path('team-3.jpg'));
     margin-top: 0px;
-    height: 400px;
+    height: 600px;
 }
 
 span.icon-bar {
@@ -134,8 +161,11 @@ span.icon-bar {
         border-bottom: 1px solid $highlight-font-color;     
     }
     
+    .navbar-collapse {
+        border-top: 1px solid $secondary-body-color;      
+    }
+    
     .navbar-collapse.in {
-        border-top: 1px solid $secondary-body-color;  
         overflow-y: inherit !important;    
     }
     
@@ -178,6 +208,66 @@ span.icon-bar {
     display: block;
 }
 
+.center {
+    position: relative;
+    transform: translateY(25%);
+    -moz-transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    -o-transform: translateY(25%);
+}
+
+@media(max-width: 1000px) {
+    .center {
+        transform: none;    
+    }
+    
+    .profile-image-long {
+        background-position-y: -150px;    
+    }
+}
+
+@media(max-width: 670px) {
+    .profile-image-long {
+        background-position-y: -50px;    
+    }
+}
+
+@media(max-width: 400px) {
+    
+    .profile-image-long {
+        background-position-y: 0px;    
+    }
+    
+    .container {
+        padding: 0px 15px !important;
+    }
+}
+
+.profile-image-long {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+#madilyn {
+    background-image: url(asset_path("madilyn-quad.jpg"));
+}
+
+#ibby {
+    background-image: url(asset_path("ibby-quad.jpg"));
+}
+
+#jack {
+    background-image: url(asset_path("jack-quad.jpg"));
+}
+
+#rachel {
+    background-image: url(asset_path("rachel-quad.jpg"));
+}
+
 .profile-name {
     text-align: center;
     color: $secondary-body-color;
@@ -196,8 +286,7 @@ p {
 }
 
 .header-spacer {
-    padding-top: 61px;
-    border-bottom: 1px solid $highlight-color-non-important;
+    padding-top: $header-height * 1.2;
 }
 
 .profile-card {

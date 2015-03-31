@@ -1,0 +1,821 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0072)http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en-US" xmlns:fb="http://ogp.me/ns/fb#" 
+xmlns:og="http://ogp.me/ns#"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META charset="UTF-8"> 
+<META name="viewport" content="width=device-width, initial-scale=1"> 
+<TITLE>Vertically center div using css3 | Code | Cipher Trick</TITLE> <LINK 
+href="http://gmpg.org/xfn/11" rel="profile"> <LINK href="http://code.ciphertrick.com/xmlrpc.php" 
+rel="pingback"> <!-- favicon --> <LINK href="http://code.ciphertrick.com/wp-content/uploads/sites/3/2015/01/cipher_icon.png" 
+rel="icon"> <!--[if IE]><link rel="shortcut icon" href="http://code.ciphertrick.com/wp-content/uploads/sites/3/2015/01/cipher_icon.png" /><![endif]-->	
+<LINK title="Code | Cipher Trick » Feed" href="http://code.ciphertrick.com/feed/" 
+rel="alternate" type="application/rss+xml"> <LINK title="Code | Cipher Trick » Comments Feed" 
+href="http://code.ciphertrick.com/comments/feed/" rel="alternate" type="application/rss+xml"> 
+<LINK title="Code | Cipher Trick » Vertically center div using css3 Comments Feed" 
+href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/feed/" 
+rel="alternate" type="application/rss+xml"> <LINK id="yarppWidgetCss-group-css" 
+href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/min.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK id="yarpp-thumbnails-yarpp-thumbnail-css" 
+href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/styles_thumbnails.css.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK id="font-awesome-css" href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/font-awesome.min.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK id="codecolorer-group-css" 
+href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/min(1).css" 
+rel="stylesheet" type="text/css" media="screen"> 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/jquery-migrate.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/min.js" type="text/javascript"></SCRIPT>
+ <LINK title="RSD" href="http://code.ciphertrick.com/xmlrpc.php?rsd" rel="EditURI" 
+type="application/rsd+xml"> <LINK href="http://code.ciphertrick.com/wp-includes/wlwmanifest.xml" 
+rel="wlwmanifest" type="application/wlwmanifest+xml"> <LINK title="Live search using custom filter in Angular Js" 
+href="http://code.ciphertrick.com/2015/02/07/live-search-using-custom-filter-in-angular-js/" 
+rel="prev"> <LINK title="Horizontally center div using css3" href="http://code.ciphertrick.com/2015/02/11/horizontally-center-div-using-css3/" 
+rel="next"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17690"> <LINK href="http://wp.me/p5ntKB-58" 
+rel="shortlink"> 
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56078804-2', 'auto');
+  ga('send', 'pageview');
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-56078804-2']);
+_gaq.push(['_setDomainName', 'ciphertrick.com']);
+_gaq.push(['_trackPageview']);
+</SCRIPT>
+
+<STYLE type="text/css">	.ssba {
+											
+											
+											
+											
+										}
+										.ssba img		
+										{ 	
+											width: 50px !important;
+											padding: 5px;
+											border:  0;
+											box-shadow: none !important;
+											display: inline !important;
+											vertical-align: middle;
+										}
+										.ssba, .ssba a		
+										{
+											text-decoration:none;
+											background: none;
+											
+											font-size: 	18px;
+											color: 		#000000!important;
+											font-weight: bold;
+										}.ssba_sharecount:after, .ssba_sharecount:before {
+											right: 100%;
+											border: solid transparent;
+											content: " ";
+											height: 0;
+											width: 0;
+											position: absolute;
+											pointer-events: none;
+										}
+										.ssba_sharecount:after {
+											border-color: rgba(224, 221, 221, 0);
+											border-right-color: #f5f5f5;
+											border-width: 5px;
+											top: 50%;
+											margin-top: -5px;
+										}
+										.ssba_sharecount:before {
+											border-color: rgba(85, 94, 88, 0);
+											border-right-color: #e0dddd;
+											border-width: 6px;
+											top: 50%;
+											margin-top: -6px;
+										}
+										.ssba_sharecount {
+											font: 11px Arial, Helvetica, sans-serif;
+											
+											padding: 5px;
+											-khtml-border-radius: 6px;
+											-o-border-radius: 6px;
+											-webkit-border-radius: 6px;
+											-moz-border-radius: 6px;
+											border-radius: 6px;
+											position: relative;
+											border: 1px solid #e0dddd;color: #555e58;
+												background: #f5f5f5;
+											}
+											.ssba_sharecount:after {
+												border-right-color: #f5f5f5;
+											}</STYLE>
+<LINK href="" rel="stylesheet" type="text/css" media="screen"> 
+<STYLE type="text/css">img#wpstats{display:none}</STYLE>
+
+<STYLE type="text/css"></STYLE>
+ <!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[196,257] --> 
+<LINK href="https://plus.google.com/+inaamhusainsunesara" rel="author"> 
+<META name="description" content="In this tutorial will learn how to center div,span or any element vertically using css3 in just few lines of code." 
+itemprop="description"> 
+<META name="keywords" content="css3,transform, vertically,  center align, center align, vertically align div center using css, vertically center a div for all browsers, css,center align,css,vertically,vertically align div center using css,vertically center a div for all browsers,all,html5" 
+itemprop="keywords"> <LINK href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+rel="canonical"> <!-- /all in one seo pack --> 
+<STYLE type="text/css">.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;}.saboxplugin-wrap .saboxplugin-gravatar img:hover {-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color, .saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey {-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color:hover,.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}.saboxplugin-wrap {margin-top:0px;}.saboxplugin-wrap {margin-bottom:0px;}.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc {font-size:14px; line-height:21px;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {font-size:21px;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color:before {width:36px; height:36px; line-height:37px; }.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey {font-size:18px;}</STYLE>
+		<LINK id="custom-css-css" href="http://code.ciphertrick.com/?custom-css=1&amp;csblog=3&amp;cscache=6&amp;csrev=10" 
+rel="stylesheet" type="text/css">		 <!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.5.1 --> 
+<META content="en_US" property="og:locale"> 
+<META content="Code | Cipher Trick" property="og:site_name"> 
+<META content="Vertically center div using css3" property="og:title"> 
+<META content="Vertically center div using css3" itemprop="name"> 
+<META name="twitter:title" content="Vertically center div using css3"> 
+<META content="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+property="og:url"> 
+<META content="article" property="og:type"> 
+<META content="2015-02-10T09:01:17+00:00" property="article:published_time">	 
+<META content="2015-02-10T09:01:17+00:00" property="article:modified_time"> 
+<META content="2015-02-10T09:01:17+00:00" property="og:updated_time"> 
+<META content="All" property="article:section"> 
+<META content="CSS3" property="article:section"> 
+<META content="HTML5" property="article:section"> 
+<META content="https://www.facebook.com/ciphertrick" property="article:publisher"> 
+<LINK href="https://plus.google.com/107114297134041612166" rel="publisher"> 
+<META name="twitter:site" content="@cipherTrick"> 
+<META name="author" content="Inaam Hussain"> 
+<META content="In this tutorial will learn how to center div,span or any element vertically using css3 in just few lines of code.&#10;&#10;For align center we are using transform translate css property. see below image, you can see Main grey div in which one green div is align vertically centered.&#10;&#10;&#10;&#10;So, lets start" 
+property="og:description"> 
+<META content="In this tutorial will learn how to center div,span or any element vertically using css3 in just few lines of code.&#10;&#10;For align center we are using transform translate css property. see below image, you can see Main grey div in which one green div is align vertically centered.&#10;&#10;&#10;&#10;So, lets start" 
+itemprop="description"> 
+<META content="http://code.ciphertrick.com/wp-content/uploads/sites/3/2015/02/vertically-center.jpg" 
+property="og:image"> 
+<META content="http://code.ciphertrick.com/wp-content/uploads/sites/3/2015/02/vertically-center.jpg" 
+itemprop="image"> 
+<META name="twitter:card" content="summary_large_image"> <!-- END - Facebook Open Graph, Google+ and Twitter Card Tags --> 
+</HEAD> 
+<BODY class="single single-post postid-318 single-format-standard custom-background group-blog">
+<DIV class="top-link">
+<DIV class="container">
+<DIV class="col-md-6"></DIV>
+<DIV class="col-md-6 header-social">
+<DIV class="social" id="social">
+<UL>
+  <LI><A title="Follow us on facebook" class="social-profile" href="https://www.facebook.com/ciphertrick"><I 
+  class="social_icon fa fa-facebook"></I></A></LI>
+  <LI><A title="Follow us on twitter" class="social-profile" href="https://twitter.com/ciphertrick"><I 
+  class="social_icon fa fa-twitter"></I></A></LI>
+  <LI><A title="Follow us on googleplus" class="social-profile" href="https://plus.google.com/107114297134041612166/"><I 
+  class="social_icon fa fa-googleplus"></I></A></LI></UL></DIV></DIV></DIV></DIV>
+<DIV class="hfeed site" id="page"><NAV class="navbar navbar-default" role="navigation">
+<DIV class="container">
+<DIV class="navbar-header"><BUTTON class="navbar-toggle" type="button" 
+data-toggle="collapse" data-target=".navbar-ex1-collapse"><SPAN 
+class="sr-only">Toggle navigation</SPAN>		                 <SPAN class="icon-bar"></SPAN><SPAN 
+class="icon-bar"></SPAN><SPAN class="icon-bar"></SPAN></BUTTON>											
+<DIV title="" id="logo" --="" menu="" the="" in="" branding="" as="" site="" 
+your="" <!--=""><A title="Code | Cipher Trick" class="navbar-brand" href="http://code.ciphertrick.com/" 
+rel="home"><IMG src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/cropped-new_code1.png">	
+										</A>					 </DIV></DIV>
+<DIV class="collapse navbar-collapse navbar-ex1-collapse">
+<UL class="nav navbar-nav main-nav" id="menu-codemenu">
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10" 
+  id="menu-item-10"><A href="http://www.ciphertrick.com/">Home</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11" 
+  id="menu-item-11"><A href="http://tech.ciphertrick.com/">Tech</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-12" 
+  id="menu-item-12"><A href="http://code.ciphertrick.com/">Code</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-219" 
+  id="menu-item-219"><A href="http://code.ciphertrick.com/demo/">Demos</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13 dropdown" 
+  id="menu-item-13"><A href="http://www.ciphertrick.com/about">About <SPAN 
+  class="caret"></SPAN></A>
+  <UL class="dropdown-menu">
+    <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223" 
+    id="menu-item-223"><A href="http://www.ciphertrick.com/about">About 
+    Us</A></LI>
+    <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224" 
+    id="menu-item-224"><A href="http://www.ciphertrick.com/privacy">Privacy 
+    Policy</A></LI>
+    <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225" 
+    id="menu-item-225"><A href="http://www.ciphertrick.com/terms">Terms and 
+    Condition</A></LI></UL></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14" 
+  id="menu-item-14"><A href="http://www.ciphertrick.com/contactus">Contact 
+  Us</A></LI></UL></DIV></DIV></NAV><!-- .site-navigation -->			
+<DIV class="site-content container" id="content">
+<DIV class="content-area col-sm-12 col-md-8 pull-left" id="primary">
+<DIV class="site-main" id="main" role="main"><ARTICLE class="post-318 post type-post status-publish format-standard has-post-thumbnail hentry category-all category-css3 category-html5 tag-center-align tag-css tag-css3 tag-transform tag-vertically tag-vertically-align-div-center-using-css tag-vertically-center-a-div-for-all-browsers" 
+id="post-318"><HEADER class="entry-header page-header"><IMG width="720" height="400" 
+class="thumbnail wp-post-image" alt="vertically center align" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/vertically-center.jpg">
+<H1 class="entry-title ">Vertically center div using css3</H1>
+<DIV class="entry-meta"><SPAN class="posted-on"><I class="fa fa-calendar"></I> 
+<A href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+rel="bookmark"><time class="entry-date published" datetime="2015-02-10T09:01:17+00:00">February 
+10, 2015</time></A></SPAN><SPAN class="byline"> <I class="fa fa-user"></I> <SPAN 
+class="author vcard"><A class="url fn n" href="http://code.ciphertrick.com/author/inaam/">Inaam 
+Hussain</A></SPAN></SPAN>		</DIV><!-- .entry-meta -->	 </HEADER><!-- .entry-header -->
+	 
+<DIV class="entry-content">
+<P>In this tutorial will learn how to center div,span or any element vertically 
+using css3 in just few lines of code.</P>
+<P>For align center we are using <STRONG>transform translate</STRONG> css 
+property. see below image, you can see Main grey div in which one green div is 
+align vertically centered.</P>
+<DIV class="wp-caption aligncenter" id="attachment_319" style="width: 650px;"><A 
+href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/vertical-align.png"><IMG 
+width="640" height="374" class="wp-image-319 " alt="vertical align center" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/vertical-align.png"></A>
+<P class="wp-caption-text">vertical align center</P></DIV>
+<P>So, lets start with css,</P>
+<DIV class="head-align">CSS</DIV>
+<DIV class="codecolorer-container css railscasts" style="overflow: auto; white-space: nowrap;">
+<DIV class="css codecolorer">.Vertical-<SPAN class="kw2">center</SPAN> <SPAN 
+class="br0">{</SPAN><BR>&nbsp; &nbsp; <SPAN class="kw1">position</SPAN><SPAN 
+class="sy0">:</SPAN> <SPAN class="kw2">relative</SPAN><SPAN 
+class="sy0">;</SPAN><BR>&nbsp; &nbsp; <SPAN class="kw1">top</SPAN><SPAN class="sy0">:</SPAN> 
+<SPAN class="re3">50%</SPAN><SPAN class="sy0">;</SPAN><BR>&nbsp; &nbsp; 
+transform<SPAN class="sy0">:</SPAN> translateY<SPAN class="br0">(</SPAN><SPAN 
+class="re3">-50%</SPAN><SPAN class="br0">)</SPAN><SPAN class="sy0">;</SPAN><BR>
+&nbsp; &nbsp; -moz-transform<SPAN class="sy0">:</SPAN> translateY<SPAN class="br0">(</SPAN><SPAN 
+class="re3">-50%</SPAN><SPAN class="br0">)</SPAN><SPAN class="sy0">;</SPAN> 
+<SPAN class="coMULTI">/* For mozilla support */</SPAN><BR>&nbsp; &nbsp; 
+-webkit-transform<SPAN class="sy0">:</SPAN> translateY<SPAN 
+class="br0">(</SPAN><SPAN class="re3">-50%</SPAN><SPAN class="br0">)</SPAN><SPAN 
+class="sy0">;</SPAN> <SPAN class="coMULTI">/* For safari support */</SPAN><BR>
+&nbsp; &nbsp; -ms-transform<SPAN class="sy0">:</SPAN> translateY<SPAN class="br0">(</SPAN><SPAN 
+class="re3">-50%</SPAN><SPAN class="br0">)</SPAN><SPAN class="sy0">;</SPAN> 
+<SPAN class="coMULTI">/* For IE support */</SPAN><BR>&nbsp; &nbsp; 
+-o-transform<SPAN class="sy0">:</SPAN> translateY<SPAN class="br0">(</SPAN><SPAN 
+class="re3">-50%</SPAN><SPAN class="br0">)</SPAN><SPAN class="sy0">;</SPAN> 
+<SPAN class="coMULTI">/* For opera support */</SPAN><BR><SPAN 
+class="br0">}</SPAN></DIV></DIV>
+<P>By applying position relative , top and transform we can easily align 
+vertically centered.</P>
+<P>See full&nbsp;code with <STRONG>HTML</STRONG> &amp; <STRONG>CSS</STRONG></P>
+<DIV class="head-align">HTML &amp; CSS</DIV>
+<DIV class="codecolorer-container html4strict railscasts" style="height: 450px; overflow: auto; white-space: nowrap;">
+<DIV class="html4strict codecolorer"><SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/html.html"><SPAN 
+class="kw2">html</SPAN></A>&gt;</SPAN><BR><SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/head.html"><SPAN 
+class="kw2">head</SPAN></A>&gt;</SPAN><BR>&nbsp;<SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/title.html"><SPAN 
+class="kw2">title</SPAN></A>&gt;</SPAN>Div Align vertically center<SPAN class="sc2">&lt;<SPAN 
+class="sy0">/</SPAN><A 
+href="http://december.com/html/4/element/title.html"><SPAN 
+class="kw2">title</SPAN></A>&gt;</SPAN><BR>&nbsp;<SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/style.html"><SPAN 
+class="kw2">style</SPAN></A>&gt;</SPAN><BR>.main-div {<BR>&nbsp; &nbsp; 
+background: none repeat scroll 0 0 #999;<BR>&nbsp; &nbsp; font-size: 18px;<BR>
+&nbsp; &nbsp; height: 450px;<BR>&nbsp; &nbsp; max-width: 850px;<BR>&nbsp; &nbsp; 
+padding: 15px;<BR>}<BR>.Vertical-center {<BR>&nbsp; &nbsp; background: none 
+repeat scroll 0 0 #1fa67a;<BR>&nbsp; &nbsp; color: #ffffff;<BR>&nbsp; &nbsp; 
+padding: 15px;<BR>&nbsp; &nbsp; position: relative;<BR>&nbsp; &nbsp; top: 
+50%;<BR>&nbsp; &nbsp; transform: translateY(-50%);<BR>&nbsp; &nbsp; 
+-moz-transform: translateY(-50%);<BR>&nbsp; &nbsp; -webkit-transform: 
+translateY(-50%);<BR>&nbsp; &nbsp; -ms-transform: translateY(-50%);<BR>&nbsp; 
+&nbsp; -o-transform: translateY(-50%);<BR>}<BR>&nbsp;<SPAN class="sc2">&lt;<SPAN 
+class="sy0">/</SPAN><A 
+href="http://december.com/html/4/element/style.html"><SPAN 
+class="kw2">style</SPAN></A>&gt;</SPAN><BR><SPAN class="sc2">&lt;<SPAN class="sy0">/</SPAN><A 
+href="http://december.com/html/4/element/head.html"><SPAN 
+class="kw2">head</SPAN></A>&gt;</SPAN><BR><SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/body.html"><SPAN 
+class="kw2">body</SPAN></A>&gt;</SPAN><BR>&nbsp; &nbsp; <SPAN class="sc2">&lt;<A 
+href="http://december.com/html/4/element/div.html"><SPAN 
+class="kw2">div</SPAN></A> <SPAN class="kw3">class</SPAN><SPAN 
+class="sy0">=</SPAN><SPAN class="st0">"main-div"</SPAN>&gt;</SPAN><BR>&nbsp; 
+&nbsp; &nbsp; &nbsp; <SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/div.html"><SPAN 
+class="kw2">div</SPAN></A> <SPAN class="kw3">class</SPAN><SPAN 
+class="sy0">=</SPAN><SPAN class="st0">"Vertical-center"</SPAN>&gt;</SPAN><BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN class="sc2">&lt;<A href="http://december.com/html/4/element/span.html"><SPAN 
+class="kw2">span</SPAN></A>&gt;</SPAN>"Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
+id est laborum."<SPAN class="sc2">&lt;<SPAN class="sy0">/</SPAN><A href="http://december.com/html/4/element/span.html"><SPAN 
+class="kw2">span</SPAN></A>&gt;</SPAN><BR>&nbsp; &nbsp; &nbsp; &nbsp; <SPAN 
+class="sc2">&lt;<SPAN class="sy0">/</SPAN><A href="http://december.com/html/4/element/div.html"><SPAN 
+class="kw2">div</SPAN></A>&gt;</SPAN><BR>&nbsp; &nbsp; <SPAN 
+class="sc2">&lt;<SPAN class="sy0">/</SPAN><A href="http://december.com/html/4/element/div.html"><SPAN 
+class="kw2">div</SPAN></A>&gt;</SPAN><BR><SPAN class="sc2">&lt;<SPAN 
+class="sy0">/</SPAN><A href="http://december.com/html/4/element/body.html"><SPAN 
+class="kw2">body</SPAN></A>&gt;</SPAN><BR><SPAN class="sc2">&lt;<SPAN class="sy0">/</SPAN><A 
+href="http://december.com/html/4/element/html.html"><SPAN 
+class="kw2">html</SPAN></A>&gt;</SPAN></DIV></DIV>
+<P>Hope this tutorial is helpful for you. 
+<DIV class="saboxplugin-wrap">
+<DIV class="saboxplugin-gravatar"><IMG width="100" height="100" class="avatar avatar-100 photo" 
+alt="" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/e264d36e2ef1658ab9b68f474ebe739b.jpeg"></DIV>
+<DIV class="saboxplugin-authorname"><A href="http://code.ciphertrick.com/author/inaam/">Inaam 
+Hussain</A></DIV>
+<DIV class="saboxplugin-desc">
+<DIV class="vcard author"><SPAN class="fn">Computer engineer.<BR>Web application 
+developer / Product developer.<BR>Like to be updated on new upcoming 
+technology.</SPAN></DIV></DIV>
+<DIV class="saboxplugin-web "><A href="http://www.ciphertrick.com/" target="_self">http://www.ciphertrick.com/</A></DIV>
+<DIV class="clearfix"></DIV>
+<DIV class="saboxplugin-socials sabox-colored"><A href="https://www.facebook.com/inaamh1" 
+target="_blank"><SPAN 
+class="saboxplugin-icon-color saboxplugin-icon-facebook"></SPAN></A><A href="https://github.com/Inaamhusain" 
+target="_blank"><SPAN 
+class="saboxplugin-icon-color saboxplugin-icon-github"></SPAN></A><A href="https://plus.google.com/+inaamhusainsunesara" 
+target="_blank"><SPAN 
+class="saboxplugin-icon-color saboxplugin-icon-googleplus"></SPAN></A><A href="http://instagram.com/inaamhusain123/" 
+target="_blank"><SPAN 
+class="saboxplugin-icon-color saboxplugin-icon-instagram"></SPAN></A><A href="http://in.linkedin.com/pub/inaam-hussain-sunesara/78/891/658" 
+target="_blank"><SPAN 
+class="saboxplugin-icon-color saboxplugin-icon-linkedin"></SPAN></A><A href="http://stackoverflow.com/users/4066093/inaam-husain" 
+target="_blank"><SPAN class="saboxplugin-icon-color saboxplugin-icon-stackoverflow"></SPAN></A><A 
+href="https://twitter.com/inaamhusain143" target="_blank"><SPAN class="saboxplugin-icon-color saboxplugin-icon-twitter"></SPAN></A></DIV></DIV><!-- Simple Share Buttons Adder (5.0) simplesharebuttons.com -->
+<DIV class="ssba">
+<DIV style="text-align: center;">Share : <A class="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/"><IMG 
+title="Facebook" class="ssba" alt="Share on Facebook" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/facebook.png"></A><SPAN 
+class="ssba_sharecount">7</SPAN><A class="ssba_twitter_share" href="http://twitter.com/share?url=http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/&amp;text=Vertically+center+div+using+css3+"><IMG 
+title="Twitter" class="ssba" alt="Tweet about this on Twitter" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/twitter.png"></A><SPAN 
+class="ssba_sharecount">8</SPAN><A class="ssba_google_share" href="https://plus.google.com/share?url=http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/"><IMG 
+title="Google+" class="ssba" alt="Share on Google+" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/google.png"></A><SPAN 
+class="ssba_sharecount">33</SPAN><A class="ssba_linkedin_share ssba_share_link" 
+href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/"><IMG 
+title="Linkedin" class="ssba" alt="Share on LinkedIn" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/linkedin.png"></A><SPAN 
+class="ssba_sharecount">0</SPAN><A class="ssba_pinterest_share" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><IMG 
+title="Pinterest" class="ssba" alt="Pin on Pinterest" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/pinterest.png"></A><SPAN 
+class="ssba_sharecount">0</SPAN><A class="ssba_email_share" href="mailto:?Subject=Vertically center div using css3&amp;Body=%20http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/"><IMG 
+title="Email" class="ssba" alt="Email this to someone" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/email.png"></A></DIV></DIV>
+<DIV class="yarpp-related">
+<H3>Related posts</H3>
+<DIV class="yarpp-thumbnails-horizontal"><A title="Horizontally center div using css3" 
+class="yarpp-thumbnail" href="http://code.ciphertrick.com/2015/02/11/horizontally-center-div-using-css3/"><IMG 
+width="120" height="120" class="attachment-yarpp-thumbnail wp-post-image" alt="horizontally center" 
+src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/horizontally-center-120x120.jpg"><SPAN 
+class="yarpp-thumbnail-title">Horizontally center div using css3</SPAN></A> <A 
+title="Fade out transition effect using CSS3" class="yarpp-thumbnail" href="http://code.ciphertrick.com/2015/01/06/fade-out-transition-effect-using-css3/"><IMG 
+width="120" height="67" class="attachment-yarpp-thumbnail wp-post-image" alt="transition_effect_on_hover" 
+src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/transition_effect_on_hover1.png"><SPAN 
+class="yarpp-thumbnail-title">Fade out transition effect using CSS3</SPAN></A> 
+<A title="CSS3 Backgrounds" class="yarpp-thumbnail" href="http://code.ciphertrick.com/2015/03/12/css3-backgrounds/"><IMG 
+width="120" height="120" class="attachment-yarpp-thumbnail wp-post-image" alt="CSS3 Backgrounds" 
+src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_backgrounds-120x120.jpg"><SPAN 
+class="yarpp-thumbnail-title">CSS3 Backgrounds</SPAN></A> <A title="CSS3 Animations" 
+class="yarpp-thumbnail" href="http://code.ciphertrick.com/2015/03/27/css3-animations/"><IMG 
+width="120" height="120" class="attachment-yarpp-thumbnail wp-post-image" alt="CSS3 Animations" 
+src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_Animations-120x120.jpg"><SPAN 
+class="yarpp-thumbnail-title">CSS3 Animations</SPAN></A> </DIV></DIV></DIV><!-- .entry-content -->
+	 <FOOTER class="entry-meta"><I class="fa fa-folder-open-o"></I> <A href="http://code.ciphertrick.com/category/all/" 
+rel="category tag">All</A>, <A href="http://code.ciphertrick.com/category/css3/" 
+rel="category tag">CSS3</A>, <A href="http://code.ciphertrick.com/category/html5/" 
+rel="category tag">HTML5</A> <I class="fa fa-tags"></I> <A href="http://code.ciphertrick.com/tag/center-align/" 
+rel="tag">center align</A>, <A href="http://code.ciphertrick.com/tag/css/" rel="tag">css</A>, 
+<A href="http://code.ciphertrick.com/tag/css3/" rel="tag">CSS3</A>, <A href="http://code.ciphertrick.com/tag/transform/" 
+rel="tag">transform</A>, <A href="http://code.ciphertrick.com/tag/vertically/" 
+rel="tag">vertically</A>, <A href="http://code.ciphertrick.com/tag/vertically-align-div-center-using-css/" 
+rel="tag">Vertically align div center using css</A>, <A href="http://code.ciphertrick.com/tag/vertically-center-a-div-for-all-browsers/" 
+rel="tag">vertically center a div for all browsers</A>. <I 
+class="fa fa-link"></I> <A href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+rel="bookmark">permalink</A>.						 
+<HR class="section-divider">
+</FOOTER><!-- .entry-meta --> </ARTICLE><!-- #post-## -->				 <NAV class="navigation post-navigation" 
+role="navigation">
+<H1 class="screen-reader-text">Post navigation</H1>
+<DIV class="nav-links">
+<DIV class="nav-previous"><A href="http://code.ciphertrick.com/2015/02/07/live-search-using-custom-filter-in-angular-js/" 
+rel="prev"><I class="fa fa-chevron-left"></I> Live search using custom filter in 
+Angular Js</A></DIV>
+<DIV class="nav-next"><A href="http://code.ciphertrick.com/2015/02/11/horizontally-center-div-using-css3/" 
+rel="next">Horizontally center div using css3 <I 
+class="fa fa-chevron-right"></I></A></DIV></DIV><!-- .nav-links -->	 </NAV><!-- .navigation -->
+				 
+<DIV class="comments-area" id="comments">
+<DIV class="comment-respond" id="respond">
+<H3 class="comment-reply-title" id="reply-title">Leave a Reply <SMALL><A id="cancel-comment-reply-link" 
+style="display: none;" href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/#respond" 
+rel="nofollow">Cancel reply</A></SMALL></H3>
+<DIV class="comment-form" id="commentform"><IFRAME name="jetpack_remote_comment" 
+id="jetpack_remote_comment" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/jetpack-comment.htm" 
+frameborder="0" scrolling="no" style="border: 0px currentColor; border-image: none; width: 100%; height: 430px;" 
+allowtransparency="false"></IFRAME>
+			 </DIV></DIV><INPUT name="comment_parent" id="comment_parent" type="hidden">
+		 </DIV><!-- #comments -->						 </DIV><!-- #main -->	 </DIV><!-- #primary -->
+	 <DIV class="widget-area col-sm-12 col-md-4" id="secondary" role="complementary"><ASIDE 
+class="widget widget_search" id="search-2">
+<FORM class="form-search" action="http://code.ciphertrick.com/" method="get">
+<DIV class="row">
+<DIV class="col-lg-12">
+<DIV class="input-group"><INPUT name="s" class="form-control search-query" id="s" type="text" placeholder="Search..." value=""> 
+        <SPAN class="input-group-btn"><BUTTON name="submit" class="btn btn-default" 
+id="searchsubmit" type="submit" value="Go"><SPAN class="glyphicon glyphicon-search"></SPAN></BUTTON> 
+        </SPAN>       </DIV></DIV></DIV></FORM></ASIDE>
+<DIV class="widget tabbed">
+<DIV class="tabs-wrapper">
+<UL class="nav nav-tabs">
+  <LI class="active"><A href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/#popular-posts" 
+  data-toggle="tab">Popular</A></LI>
+  <LI><A href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/#recent" 
+  data-toggle="tab">Recent</A></LI>
+  <LI><A href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/#messages" 
+  data-toggle="tab"><I 
+class="fa fa-comments tab-comment"></I>Comments</A></LI></UL>
+<DIV class="tab-content">
+<UL class="tab-pane active" id="popular-posts">
+  <LI><A title="Dynamically Attaching controllers to a directive" class="tab-thumb thumbnail" 
+  href="http://code.ciphertrick.com/2015/01/31/dynamically-attaching-controllers-to-a-directive/" 
+  rel="bookmark"><IMG width="840" height="440" class="attachment-tab-small wp-post-image" 
+  alt="Dynamically attaching controllers to a directive." src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/featured3.jpg"></A>
+  <DIV class="content"><A title="Dynamically Attaching controllers to a directive" 
+  class="tab-entry" href="http://code.ciphertrick.com/2015/01/31/dynamically-attaching-controllers-to-a-directive/" 
+  rel="bookmark">Dynamically Attaching controllers to a directive</A><I>         
+                             Jan 31, 2015                                </I>    
+                           </DIV></LI>
+  <LI><A title="Vertically center div using css3" class="tab-thumb thumbnail" 
+  href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+  rel="bookmark"><IMG width="720" height="400" class="attachment-tab-small wp-post-image" 
+  alt="vertically center align" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/vertically-center.jpg"></A>
+  <DIV class="content"><A title="Vertically center div using css3" class="tab-entry" 
+  href="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/" 
+  rel="bookmark">Vertically center div using css3</A><I>                         
+             Feb 10, 2015                                </I>                    
+           </DIV></LI>
+  <LI><A title="Fade out transition effect using CSS3" class="tab-thumb thumbnail" 
+  href="http://code.ciphertrick.com/2015/01/06/fade-out-transition-effect-using-css3/" 
+  rel="bookmark"><IMG width="750" height="420" class="attachment-tab-small wp-post-image" 
+  alt="transition_effect_on_hover" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/transition_effect_on_hover1.png"></A>
+  <DIV class="content"><A title="Fade out transition effect using CSS3" class="tab-entry" 
+  href="http://code.ciphertrick.com/2015/01/06/fade-out-transition-effect-using-css3/" 
+  rel="bookmark">Fade out transition effect using CSS3</A><I>                    
+                  Jan 6, 2015                                </I>                
+               </DIV></LI>
+  <LI><A title="CSS3 3D Transforms" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/" 
+  rel="bookmark"><IMG width="700" height="410" class="attachment-tab-small wp-post-image" 
+  alt="CSS3 3DTransforms" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_3DTransforms.jpg"></A>
+  <DIV class="content"><A title="CSS3 3D Transforms" class="tab-entry" href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/" 
+  rel="bookmark">CSS3 3D Transforms</A><I>                                    
+  Mar 23, 2015                                </I>                             
+  </DIV></LI>
+  <LI><A title="PHP Word Censor" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2014/11/26/php-word-censor/" 
+  rel="bookmark"><IMG width="880" height="440" class="attachment-tab-small wp-post-image" 
+  alt="Wordcencoer" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/Wordcencoer.jpg"></A>
+  <DIV class="content"><A title="PHP Word Censor" class="tab-entry" href="http://code.ciphertrick.com/2014/11/26/php-word-censor/" 
+  rel="bookmark">PHP Word Censor</A><I>                                    Nov 
+  26, 2014                                </I>                             
+  </DIV></LI></UL>
+<UL class="tab-pane" id="recent">
+  <LI><A title="CSS3 Multiple Columns" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/30/css3-multiple-columns/" 
+  rel="bookmark"><IMG width="700" height="410" class="attachment-tab-small wp-post-image" 
+  alt="CSS3 Multiple Columns" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_MultipleColumns.jpg"></A>
+  <DIV class="content"><A title="CSS3 Multiple Columns" class="tab-entry" href="http://code.ciphertrick.com/2015/03/30/css3-multiple-columns/" 
+  rel="bookmark">CSS3 Multiple Columns</A><I>                                    
+  Mar 30, 2015                                </I>                             
+  </DIV></LI>
+  <LI><A title="Easy animations in Angular JS" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/28/easy-animations-in-angular-js/" 
+  rel="bookmark"><IMG width="842" height="450" class="attachment-tab-small wp-post-image" 
+  alt="Animations with angular js" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/featured1.jpg"></A>
+  <DIV class="content"><A title="Easy animations in Angular JS" class="tab-entry" 
+  href="http://code.ciphertrick.com/2015/03/28/easy-animations-in-angular-js/" 
+  rel="bookmark">Easy animations in Angular JS</A><I>                            
+          Mar 28, 2015                                </I>                       
+        </DIV></LI>
+  <LI><A title="CSS3 Animations" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/27/css3-animations/" 
+  rel="bookmark"><IMG width="700" height="410" class="attachment-tab-small wp-post-image" 
+  alt="CSS3 Animations" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_Animations.jpg"></A>
+  <DIV class="content"><A title="CSS3 Animations" class="tab-entry" href="http://code.ciphertrick.com/2015/03/27/css3-animations/" 
+  rel="bookmark">CSS3 Animations</A><I>                                    Mar 
+  27, 2015                                </I>                             
+  </DIV></LI>
+  <LI><A title="CSS3 Transitions" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/25/css3-transitions/" 
+  rel="bookmark"><IMG width="700" height="410" class="attachment-tab-small wp-post-image" 
+  alt="CSS3 Transitions" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_Transitions.jpg"></A>
+  <DIV class="content"><A title="CSS3 Transitions" class="tab-entry" href="http://code.ciphertrick.com/2015/03/25/css3-transitions/" 
+  rel="bookmark">CSS3 Transitions</A><I>                                    Mar 
+  25, 2015                                </I>                             
+  </DIV></LI>
+  <LI><A title="CSS3 3D Transforms" class="tab-thumb thumbnail" href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/" 
+  rel="bookmark"><IMG width="700" height="410" class="attachment-tab-small wp-post-image" 
+  alt="CSS3 3DTransforms" src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/CSS3_3DTransforms.jpg"></A>
+  <DIV class="content"><A title="CSS3 3D Transforms" class="tab-entry" href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/" 
+  rel="bookmark">CSS3 3D Transforms</A><I>                                    
+  Mar 23, 2015                                </I>                             
+  </DIV></LI></UL>
+<UL class="tab-pane" id="messages">
+  <LI>
+  <DIV class="content">                            bashi on                      
+          <A title="Download JSON data in CSV format Cross Browser Support" 
+  href="http://code.ciphertrick.com/2014/12/07/download-json-data-in-csv-format-cross-browser-support/" 
+  rel="bookmark">                                Download JSON data in CSV 
+  format Cross Browser Support                            </A>                   
+            
+  <P>                            Thank you for quick response! Sorry, this is my 
+                             (...)                            </P></DIV></LI>
+  <LI>
+  <DIV class="content">                            Inaam Hussain on              
+                  <A title="Download JSON data in CSV format Cross Browser Support" 
+  href="http://code.ciphertrick.com/2014/12/07/download-json-data-in-csv-format-cross-browser-support/" 
+  rel="bookmark">                                Download JSON data in CSV 
+  format Cross Browser Support                            </A>                   
+            
+  <P>                            Hi Bashi, Just now i have checked in IE9 and 
+  it's working                            (...)                            
+  </P></DIV></LI>
+  <LI>
+  <DIV class="content">                            bashi on                      
+          <A title="Download JSON data in CSV format Cross Browser Support" 
+  href="http://code.ciphertrick.com/2014/12/07/download-json-data-in-csv-format-cross-browser-support/" 
+  rel="bookmark">                                Download JSON data in CSV 
+  format Cross Browser Support                            </A>                   
+            
+  <P>                            The Demo does not work on                       
+                                   </P></DIV></LI>
+  <LI>
+  <DIV class="content">                            Inaam Hussain on              
+                  <A title="CSS3 3D Transforms" href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/" 
+  rel="bookmark">                                CSS3 3D Transforms              
+                </A>                             
+  <P>                            Yeah will surely look in to                     
+                                     </P></DIV></LI>
+  <LI>
+  <DIV class="content">                            Inaam Hussain on              
+                  <A title="Download JSON data in CSV format Cross Browser Support" 
+  href="http://code.ciphertrick.com/2014/12/07/download-json-data-in-csv-format-cross-browser-support/" 
+  rel="bookmark">                                Download JSON data in CSV 
+  format Cross Browser Support                            </A>                   
+            
+  <P>                            That its working fine , can you describe more 
+  on you                            (...)                            
+  </P></DIV></LI></UL></DIV></DIV></DIV><ASIDE class="widget widget_recent_entries" 
+id="recent-posts-2">
+<H3 class="widget-title">Recent Posts</H3>
+<UL>
+  <LI><A 
+  href="http://code.ciphertrick.com/2015/03/30/css3-multiple-columns/">CSS3 
+  Multiple Columns</A>						 </LI>
+  <LI><A href="http://code.ciphertrick.com/2015/03/28/easy-animations-in-angular-js/">Easy 
+  animations in Angular JS</A>						 </LI>
+  <LI><A href="http://code.ciphertrick.com/2015/03/27/css3-animations/">CSS3 
+  Animations</A>						 </LI>
+  <LI><A href="http://code.ciphertrick.com/2015/03/25/css3-transitions/">CSS3 
+  Transitions</A>						 </LI>
+  <LI><A href="http://code.ciphertrick.com/2015/03/23/css3-3d-transforms/">CSS3 
+  3D Transforms</A>						 </LI></UL></ASIDE><ASIDE class="widget widget_categories" 
+id="categories-3">
+<H3 class="widget-title">Categories</H3>
+<UL>
+  <LI class="cat-item cat-item-16"><A href="http://code.ciphertrick.com/category/all/">All</A> 
+  (34) </LI>
+  <LI class="cat-item cat-item-27"><A href="http://code.ciphertrick.com/category/angular-js/">Angular 
+  Js</A> (10) </LI>
+  <LI class="cat-item cat-item-73"><A href="http://code.ciphertrick.com/category/css3/">CSS3</A> 
+  (14) </LI>
+  <LI class="cat-item cat-item-40"><A href="http://code.ciphertrick.com/category/html5/">HTML5</A> 
+  (4) </LI>
+  <LI class="cat-item cat-item-3"><A href="http://code.ciphertrick.com/category/javascript/">Javascript</A> 
+  (16) </LI>
+  <LI class="cat-item cat-item-87"><A href="http://code.ciphertrick.com/category/jquery-2/">JQuery</A> 
+  (1) </LI>
+  <LI class="cat-item cat-item-116"><A href="http://code.ciphertrick.com/category/node-js-2/">Node 
+  Js</A> (3) </LI>
+  <LI class="cat-item cat-item-6"><A href="http://code.ciphertrick.com/category/php/">PHP</A> 
+  (3) 
+  <UL class="children">
+    <LI class="cat-item cat-item-7"><A href="http://code.ciphertrick.com/category/php/quick-lessons/">Quick 
+    Lessons</A> (2) </LI></UL></LI>
+  <LI class="cat-item cat-item-69"><A href="http://code.ciphertrick.com/category/rest-apis/">REST 
+  APIs</A> (2) </LI>
+  <LI class="cat-item cat-item-57"><A href="http://code.ciphertrick.com/category/selenium/">Selenium</A> 
+  (1) </LI>
+  <LI class="cat-item cat-item-70"><A href="http://code.ciphertrick.com/category/slim-framework-2/">Slim 
+  framework</A> (1) </LI></UL></ASIDE><ASIDE class="widget jetpack_subscription_widget" 
+id="blog_subscription-2">
+<H3 class="widget-title"><LABEL for="subscribe-field">Subscribe to Blog via 
+Email</LABEL></H3>
+<FORM id="subscribe-blog-blog_subscription-2" action="#" method="post" 
+accept-charset="utf-8">
+<P id="subscribe-text"></P>
+<P>Join 13 other subscribers</P>
+<P id="subscribe-email"><LABEL id="jetpack-subscribe-label" for="email">
+					Email Address				</LABEL>
+				 <INPUT name="email" id="subscribe-field" type="email" placeholder="Email Address" value="">
+			 </P>
+<P id="subscribe-submit"><INPUT name="action" type="hidden" value="subscribe">
+				 <INPUT name="source" type="hidden" value="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/">
+				 <INPUT name="sub-type" type="hidden" value="widget">				 <INPUT name="redirect_fragment" type="hidden" value="blog_subscription-2">
+								 <INPUT name="jetpack_subscriptions_widget" type="submit" value="Subscribe">
+			 </P></FORM>
+<SCRIPT>
+			( function( d ) {
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+ 					label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+ 					label.style.position = 'absolute';
+ 					label.style.height   = '1px';
+ 					label.style.width    = '1px';
+ 					label.style.overflow = 'hidden';
+ 						
+				}
+			} ) ( document );
+		</SCRIPT>
+		 </ASIDE></DIV><!-- #secondary -->		 <!--WP Code Highlight_start-->	 
+<SCRIPT type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</SCRIPT>
+	 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/wp-code-highlight.js" type="text/javascript"></SCRIPT>
+	 <!--WP Code Highlight_end-->	 </DIV><!-- #content -->	 
+<DIV id="footer-area">
+<DIV class="container footer-inner">
+<DIV class="footer-widget-area">
+<DIV class="col-sm-6 col-md-4 footer-widget" role="complementary">
+<DIV class="widget widget_nav_menu" id="nav_menu-2">
+<H3 class="widgettitle">Site Link</H3>
+<DIV class="menu-footermenu-container">
+<UL class="menu" id="menu-footermenu">
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272" 
+  id="menu-item-272"><A href="http://www.ciphertrick.com/">Home</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-273" 
+  id="menu-item-273"><A href="http://tech.ciphertrick.com/">Tech</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-274" 
+  id="menu-item-274"><A href="http://code.ciphertrick.com/">Code</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-275" 
+  id="menu-item-275"><A href="http://code.ciphertrick.com/demo/">Demos</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-276" 
+  id="menu-item-276"><A href="http://www.ciphertrick.com/about">About 
+Us</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-277" 
+  id="menu-item-277"><A href="http://www.ciphertrick.com/privacy">Privacy 
+  Policy</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278" 
+  id="menu-item-278"><A href="http://www.ciphertrick.com/terms">Terms &amp; 
+  Condition</A></LI>
+  <LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279" 
+  id="menu-item-279"><A href="http://www.ciphertrick.com/contactus">Contact 
+  Us</A></LI></UL></DIV></DIV></DIV><!-- .widget-area .first -->						 
+<DIV class="col-sm-6 col-md-4 footer-widget" role="complementary">
+<DIV class="widget widget_tag_cloud" id="tag_cloud-3">
+<H3 class="widgettitle">Tags</H3>
+<DIV class="tagcloud"><A title="34 topics" class="tag-link-16" style="font-size: 22pt;" 
+href="http://code.ciphertrick.com/category/all/">All</A> <A title="10 topics" 
+class="tag-link-27" style="font-size: 16.354pt;" href="http://code.ciphertrick.com/category/angular-js/">Angular 
+Js</A> <A title="14 topics" class="tag-link-73" style="font-size: 17.935pt;" 
+href="http://code.ciphertrick.com/category/css3/">CSS3</A> <A title="4 topics" 
+class="tag-link-40" style="font-size: 12.516pt;" href="http://code.ciphertrick.com/category/html5/">HTML5</A> 
+<A title="16 topics" class="tag-link-3" style="font-size: 18.5pt;" href="http://code.ciphertrick.com/category/javascript/">Javascript</A> 
+<A title="1 topic" class="tag-link-87" style="font-size: 8pt;" href="http://code.ciphertrick.com/category/jquery-2/">JQuery</A> 
+<A title="3 topics" class="tag-link-116" style="font-size: 11.387pt;" href="http://code.ciphertrick.com/category/node-js-2/">Node 
+Js</A> <A title="3 topics" class="tag-link-6" style="font-size: 11.387pt;" href="http://code.ciphertrick.com/category/php/">PHP</A> 
+<A title="2 topics" class="tag-link-7" style="font-size: 10.032pt;" href="http://code.ciphertrick.com/category/php/quick-lessons/">Quick 
+Lessons</A> <A title="2 topics" class="tag-link-69" style="font-size: 10.032pt;" 
+href="http://code.ciphertrick.com/category/rest-apis/">REST APIs</A> <A title="1 topic" 
+class="tag-link-57" style="font-size: 8pt;" href="http://code.ciphertrick.com/category/selenium/">Selenium</A> 
+<A title="1 topic" class="tag-link-70" style="font-size: 8pt;" href="http://code.ciphertrick.com/category/slim-framework-2/">Slim 
+framework</A></DIV></DIV></DIV><!-- .widget-area .second -->						 
+<DIV class="col-sm-6 col-md-4 footer-widget" role="complementary">
+<DIV class="widget jetpack_subscription_widget" id="blog_subscription-3">
+<H3 class="widgettitle"><LABEL for="subscribe-field">Subscribe to Blog via 
+Email</LABEL></H3>
+<FORM id="subscribe-blog-blog_subscription-3" action="#" method="post" 
+accept-charset="utf-8">
+<P id="subscribe-text">Enter your email address to subscribe to this blog and 
+receive notifications of new posts by email.</P>
+<P>Join 13 other subscribers</P>
+<P id="subscribe-email"><LABEL id="jetpack-subscribe-label" for="email">
+					Email Address				</LABEL>
+				 <INPUT name="email" id="subscribe-field" type="email" placeholder="Email Address" value="">
+			 </P>
+<P id="subscribe-submit"><INPUT name="action" type="hidden" value="subscribe">
+				 <INPUT name="source" type="hidden" value="http://code.ciphertrick.com/2015/02/10/vertically-center-div-using-css3/">
+				 <INPUT name="sub-type" type="hidden" value="widget">				 <INPUT name="redirect_fragment" type="hidden" value="blog_subscription-3">
+								 <INPUT name="jetpack_subscriptions_widget" type="submit" value="Subscribe">
+			 </P></FORM>
+<SCRIPT>
+			( function( d ) {
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+ 					label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+ 					label.style.position = 'absolute';
+ 					label.style.height   = '1px';
+ 					label.style.width    = '1px';
+ 					label.style.overflow = 'hidden';
+ 						
+				}
+			} ) ( document );
+		</SCRIPT>
+		 </DIV></DIV><!-- .widget-area .third -->			 </DIV></DIV><FOOTER class="site-footer" 
+id="colophon" role="contentinfo">
+<DIV class="site-info container">
+<DIV class="social" id="social">
+<UL>
+  <LI><A title="Follow us on facebook" class="social-profile" href="https://www.facebook.com/ciphertrick"><I 
+  class="social_icon fa fa-facebook"></I></A></LI>
+  <LI><A title="Follow us on twitter" class="social-profile" href="https://twitter.com/ciphertrick"><I 
+  class="social_icon fa fa-twitter"></I></A></LI>
+  <LI><A title="Follow us on googleplus" class="social-profile" href="https://plus.google.com/107114297134041612166/"><I 
+  class="social_icon fa fa-googleplus"></I></A></LI></UL></DIV><NAV class="col-md-6" 
+role="navigation"></NAV>
+<DIV class="copyright"><A title="Code CipherTrick" href="http://code.ciphertrick.com/">Code 
+CipherTrick</A>  All rights reserved@2014.									 </DIV></DIV><!-- .site-info -->
+			 
+<DIV class="scroll-to-top"><I class="fa fa-angle-up"></I></DIV><!-- .scroll-to-top -->
+		 </FOOTER><!-- #colophon -->	 </DIV></DIV><!-- #page -->	 
+<DIV style="display: none;">
+<DIV class="grofile-hash-map-e264d36e2ef1658ab9b68f474ebe739b"></DIV></DIV><LINK 
+id="yarppRelatedCss-group-css" href="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/min(2).css" 
+rel="stylesheet" type="text/css" media="all"> 
+<SCRIPT type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/code.ciphertrick.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</SCRIPT>
+ 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/devicepx-jetpack.js" type="text/javascript"></SCRIPT>
+		 <!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		 
+<SCRIPT type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=79477589&postid=318&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=identicon&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.2.1&sig=d31be8484b64dbed5c238d3956ce8dd0125a6c11#parent=http%3A%2F%2Fcode.ciphertrick.com%2F2015%2F02%2F10%2Fvertically-center-div-using-css3%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=79477589&postid=318&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=identicon&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.2.1&sig=d31be8484b64dbed5c238d3956ce8dd0125a6c11#parent=http%3A%2F%2Fcode.ciphertrick.com%2F2015%2F02%2F10%2Fvertically-center-div-using-css3%2F";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</SCRIPT>
+		 
+<SCRIPT src="Vertically%20center%20div%20using%20css3%20%20Code%20%20Cipher%20Trick_files/e-201514.js" type="text/javascript"></SCRIPT>
+	 
+<SCRIPT type="text/javascript">
+	st_go({v:'ext',j:'1:3.2.1',blog:'79477589',post:'318',tz:'0'});
+	var load_cmc = function(){linktracker_init(79477589,318,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</SCRIPT>
+ </BODY></HTML>

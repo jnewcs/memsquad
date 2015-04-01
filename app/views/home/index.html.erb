@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
     //<![CDATA[
-    function Switch(destinationID, id_1, id_2, id_3, id_4, id_5, id_6, method, url) {
+    function Switch(destinationID, id_1, id_2, id_3, id_4, id_5, id_6, id_7, method, url) {
         var obj = this;
         this.destination = document.getElementById(destinationID);
         this.teamButton = document.getElementById(id_1);
@@ -12,7 +12,8 @@
         this.teamButton2 = document.getElementById(id_3);
         this.platformButton2 = document.getElementById(id_4);
         this.mainButton = document.getElementById(id_5);
-        this.hidden = document.getElementById(id_6);
+        this.logo = document.getElementById(id_6);
+        this.hidden = document.getElementById(id_7);
         
         this.method = method;
         this.url = url;
@@ -38,6 +39,11 @@
         }
         
         this.mainButton.onclick = function(event) {
+            obj.query = "main";
+            obj.performSwitch(event);
+        }
+        
+        this.logo.onclick = function(event) {
             obj.query = "main";
             obj.performSwitch(event);
         }
@@ -75,6 +81,6 @@
         myXHR.send();
     }
     
-    var s = new Switch("content", "t", "p", "t2", "p2", "clickable", "h", "GET", "/home/switch?query=");
+    var s = new Switch("content", "t", "p", "t2", "p2", "clickable", "l", "h", "GET", "/home/switch?query=");
     //]]>
 </script>

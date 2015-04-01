@@ -1,44 +1,62 @@
-<!--<%= image_tag "team-4.jpg", alt: "Main Image",  class: "main-image animate fadeIn" %>-->
-<div class="main-image animate fadeIn"></div>
-<div class="container">
-    <h3 class="title">
-        We are MemSquad
-    </h3>
-    <p>
-        Eighteen! We are MemSquad, and it would be our honor to serve all of you as class presidents for next year. Together, we have over 15 years of combined student government experience and have extensive background in representing those around us. Each of us are current Frosh Council representatives, and are well acquainted with the nitty-gritty details that revolve around next year’s presidency.
-    </p>
-    <div class="row">
-        <div class="col-lg-6 col-sm-6">
-            <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="t2">
-                Our Team
-            </button>
+<div class="container-fluid no-padding">
+    <div class="row no-padding no-margin darker-background">
+        <div class="col-lg-8 no-padding">
+            <a class="fancybox" rel="group" href="<%= asset_path('team-2.jpg') %>">
+                <img src="<%= asset_path('team-2.jpg') %>" alt="" class="main-image animate fadeIn" />
+            </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
-            <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="p2">
-                Our Platform
-            </button>
+        <div class="col-lg-4">
+            <div class="header-spacer"></div>
+            <h3 class="title">
+                We are MemSquad
+            </h3>
+            <p>
+                Eighteen! We are MemSquad, and it would be our honor to serve all of you as class presidents for next year. Each of us are current Frosh Council representatives, and are well acquainted with the nitty-gritty details that revolve around next year’s presidency.
+            </p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="p2">
+                        Our Platform
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="faces">
         <div class="row">
-            <div class="col-lg-3 col-sm-3 col-xs-6">
-                <%= image_tag "madilyn.png", alt: "Profile Image",  class: "profile-image" %>
-                <h6 class="profile-name">Madilyn</h6>
+            <div class="col-lg-3 col-sm-3">
+                <h3 class="title">
+                    Learn About Us
+                </h3>
+                <p>
+                   Together, we have over 15 years of combined student government experience and have extensive background in representing those around us. 
+                </p>
+                <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="t2">
+                    Our Team
+                </button>
             </div>
+            <div class="col-lg-9 col-sm-9">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <%= image_tag "madilyn-quad.jpg", alt: "Profile Image",  class: "profile-image" %>
+                        <h6 class="profile-name">Madilyn</h6>
+                    </div>
 
-            <div class="col-lg-3 col-sm-3 col-xs-6">
-                <%= image_tag "ibby.png", alt: "Profile Image",  class: "profile-image" %>
-                <h6 class="profile-name">Ibrahim</h6>
-            </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <%= image_tag "ibby-quad.jpg", alt: "Profile Image",  class: "profile-image" %>
+                        <h6 class="profile-name">Ibrahim</h6>
+                    </div>
 
-            <div class="col-lg-3 col-sm-3 col-xs-6">
-                <%= image_tag "rachel.png", alt: "Profile Image",  class: "profile-image" %>
-                <h6 class="profile-name">Rachel</h6>
-            </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <%= image_tag "rachel-quad.jpg", alt: "Profile Image",  class: "profile-image" %>
+                        <h6 class="profile-name">Rachel</h6>
+                    </div>
 
-            <div class="col-lg-3 col-sm-3 col-xs-6">
-                <%= image_tag "jack.png", alt: "Profile Image",  class: "profile-image" %>
-                <h6 class="profile-name">Jack</h6>
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <%= image_tag "jack-quad.jpg", alt: "Profile Image",  class: "profile-image" %>
+                        <h6 class="profile-name">Jack</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -47,7 +65,7 @@
 <% if check == true %>
     <script type="text/javascript">
         //<![CDATA[
-        var s = new Switch("content", "t", "p", "t2", "p2", "h", "clickable", "GET", "/home/switch?query=");
+        var s = new Switch("content", "t", "p", "t2", "p2", "l", "h", "clickable", "GET", "/home/switch?query=");
         //]]>
     </script>
 <% end %>

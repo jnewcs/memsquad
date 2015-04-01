@@ -5,10 +5,12 @@
 $primary-font: Open Sans !important;
 $secondary-font: 'PT Sans', sans-serif !important;
 $primary-body-color: #333 !important;
+$primary-body-color-np: #adadad;
 $secondary-body-color: #525252 !important;
 $highlight-font-color: #37cecc !important;
 $highlight-color-non-important: #37cecc;
 $primary-background-color: #fbfbfb !important;
+$secondary-background-color: #f3f3f3 !important;
 $primary-background-color-non-important: #fbfbfb;
 $base-font-size: 12px;
 $large-font-size: 2.1em;
@@ -48,12 +50,16 @@ body, html {
     height: $logo-height;
     position: absolute;
     margin: 0px auto;
-    top: 1px;
+    top: 0px;
     left: 50%;
     margin-left: $logo-height-half;
     display: block;
     background-image: url(asset_path('logo-blue-small-v2.png'));
     background-size: cover;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .logo-clickable {
@@ -108,10 +114,6 @@ a {
     display: block;
     width: 100%;
     height: 500px;
-    margin-top: -75px;
-    background-image: url(asset_path('team-test.jpg'));
-    background-size: cover;
-    border: 1px solid $primary-body-color;
 }
 
 @media(max-width: 900px) {
@@ -124,15 +126,32 @@ a {
 
 @media(max-width: 600px) {
     .main-image {
-        background-image: url(asset_path('team-2-mobile.jpg'));
+        height: 350px;
+    }
+    
+    .platform-image {
+        height: 250px !important;    
+    }
+}
+
+@media(max-width: 400px) {
+    .main-image {
+        margin-top: 30px;
+        height: 250px;
+    }
+    
+    .platform-image {
+        height: 175px !important;    
     }
 }
 
 .platform-image {
     @extend .main-image;
-    background-image: url(asset_path('team-3.jpg'));
-    margin-top: 0px;
-    height: 600px;
+    height: 350px;
+    width: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid $primary-body-color;
 }
 
 span.icon-bar {
@@ -140,7 +159,7 @@ span.icon-bar {
 }
 
 .hidden-logo {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 0px;
     margin: 15px;
@@ -182,7 +201,7 @@ span.icon-bar {
     }
     
     .hidden-logo {
-        display: block;    
+        visibility: inherit;    
     }
     
     .hidden-logo:hover {
@@ -207,9 +226,16 @@ span.icon-bar {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    border: 1px solid $primary-body-color;
-    margin: 10px auto;
+    border: 1px solid $primary-body-color-np;
+    margin: 60px auto 30px auto;
     display: block;
+}
+
+@media(max-width: 1200px) {
+    
+    .profile-image {
+        margin: 10px auto 30px auto;
+    }
 }
 
 .center {
@@ -276,9 +302,11 @@ span.icon-bar {
     text-align: center;
     color: $secondary-body-color;
     font-family: $secondary-font;
+    margin-bottom: 15px;
 }
 
 p {
+    padding: 10px 15px;
     line-height: $large-font-size;
     font-family: $secondary-font;
 }
@@ -291,6 +319,31 @@ p {
 
 .header-spacer {
     padding-top: $header-height * 1.5;
+}
+
+.spacer {
+    padding-top: 15px;
+}
+
+.no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.darker-background {
+    background-color: $secondary-background-color;
+    border-bottom: 1px solid $primary-body-color-np;
+}
+
+.darker-background-platform {
+    @extend .darker-background;
+    border-bottom: 0px;
+    padding: 20px 0px;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .profile-card {

@@ -11,5 +11,7 @@ Rails.application.config.assets.version = '1.0'
  Rails.application.config.assets.precompile += %w(jquery.easing.min.js)
  Rails.application.config.assets.precompile += %w(memsquad.js)
  Rails.application.config.assets.precompile += %w(progress.js)
+ Rails.application.config.assets.precompile += %w(jquery.fancybox.pack.js)
  Rails.application.config.assets.precompile += %w(animate.css)
  Rails.application.config.assets.precompile += %w(progress.css)
+ Rails.application.config.assets.precompile += %w(jquery.fancybox.css)
